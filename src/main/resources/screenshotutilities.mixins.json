@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.screenshotutilities.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ChatComponentAccessor",
+    "ItemInHandRendererInvoker",
+    "KeyboardHandlerMixin",
+    "ScreenPanoramaMixin",
+    "TitleScreenPanoramaMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

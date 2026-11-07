@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="logo.png"
+# Pixel art, so no smoothing in the mod list.
+logoBlur=false
+authors="Dewey"
+# Client only: servers don't need it, and players with it can join servers without it.
+displayTest="IGNORE_ALL_VERSION"
+description='''
+Crop, copy and tidy up your screenshots in game. Hide parts of the HUD after the shot, keep what matters in colour, and use your best pictures on the main menu and loading screens.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

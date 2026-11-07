@@ -1,0 +1,45 @@
+name: Bug
+description: Something in Screenshot Utilities is broken.
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Screenshot Utilities version
+      description: The number in the jar name or the mods list, e.g. 1.0.0.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where were you playing?
+      options:
+        - "Single player"
+        - "On a server or LAN world"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you did, what you expected and what happened instead. Screenshots help.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to make it happen again
+      placeholder: |
+        1. Press F2 with ...
+        2. ...
+  - type: input
+    id: mods
+    attributes:
+      label: Modpack, shaders or other mods
+      description: Name the modpack if you use one, and the shader pack if it's about shaders.
+  - type: textarea
+    id: log
+    attributes:
+      label: Crash report or log
+      description: For a crash, paste a link to the crash report or latest.log (mclo.gs works well).
+      render: text

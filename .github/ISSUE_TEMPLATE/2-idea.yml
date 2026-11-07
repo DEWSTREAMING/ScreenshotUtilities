@@ -1,0 +1,11 @@
+name: Idea
+description: A suggestion for Screenshot Utilities.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What you would like and how you'd use it.
+    validations:
+      required: true
